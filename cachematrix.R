@@ -47,16 +47,16 @@ cacheSolve <- function(x, ...) {
 
 # TESTING OF FUNCTIONS
 
-# Create test input matrix
-input_mat <- matrix(c(4, 2, 7, 6), nrow = 2)
-
-# Feed test matrix to makeCacheMatrix
-test_mat <- makeCacheMatrix(input_mat)
-
-# Feed output from above to cacheSolve
-cacheSolve(test_mat)
-
-# Confirm this new matrix is actually the inverse of input matrix
-# Should return Identity matrix
-input_mat %*% cacheSolve(test_mat)
+# # Create test input matrix
+# input_mat <- matrix(c(4, 2, 7, 6), nrow = 2)
+# 
+# # Feed test matrix to makeCacheMatrix
+# test_mat <- makeCacheMatrix(input_mat)
+# 
+# # Feed output from above to cacheSolve
+# cacheSolve(test_mat)
+# 
+# # Confirm this new matrix is actually the inverse of input matrix
+# # Should return Identity matrix
+# input_mat %*% cacheSolve(test_mat)
 
